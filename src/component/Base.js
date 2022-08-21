@@ -9,7 +9,7 @@ function Base({children}) {
 
   const [userId,setUserId] = useState('')
   const [isLoggedIn,setIsLoggedIn] = useState(false);
-  const [disURL,setDisURL] = useState(`https://discord.com/api/oauth2/authorize?client_id=${process.env.REACT_APP_DISCORDCLINTID}&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2F&response_type=token&scope=identify%20guilds%20guilds.members.read`)
+  const [disURL,setDisURL] = useState(`https://discord.com/api/oauth2/authorize?client_id=${process.env.REACT_APP_DISCORDCLINTID}&redirect_uri=https%3A%2F%2Fglittering-choux-f79be5.netlify.app%2F&response_type=token&scope=identify%20guilds%20guilds.members.read`)
     // 'https://discord.com/api/oauth2/authorize?client_id=996604102727446548&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2F&response_type=token&scope=identify%20guilds.members.read'
  
   useEffect(()=>{
